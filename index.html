@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Kenmure | Gated Golf Community in Flat Rock, NC</title>
+<meta name="description" content="Kenmure is a gated, owner-run community of 715 homes on the Blue Ridge escarpment in Flat Rock, five miles south of Hendersonville, NC. Annual fees, reserves and governance, stated plainly for buyers.">
+<meta property="og:title" content="Kenmure, Flat Rock, North Carolina">
+<meta property="og:description" content="Mountain mornings. Golf by noon. Neighbors by evening. A gated community run by the people who live here.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Kenmure Property Owners Association",
+  "alternateName": "KPOA",
+  "email": "treasurer@kenmure.org",
+  "address": { "@type": "PostalAddress", "addressLocality": "Flat Rock", "addressRegion": "NC", "postalCode": "28731", "addressCountry": "US" },
+  "areaServed": "Flat Rock, Henderson County, North Carolina",
+  "foundingDate": "2002"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap">
+<style>
+  :root {
+    --ground: #F3F5F2;
+    --surface: #FFFFFF;
+    --surface-2: #E9EDE9;
+    --ink: #17261F;
+    --ink-2: #3E4F47;
+    --muted: #6F7D75;
+    --line: #D4DAD5;
+    --ridge: #33526A;
+    --ridge-deep: #223A4C;
+    --ridge-soft: #C9D6DF;
+    --brass: #A8761F;
+    --brass-soft: #F1E6CF;
+    --note-bg: #FBF3E2;
+    --note-ink: #6B4A0B;
+    --note-line: #D9B86A;
+    --hero-a: #2B4658;
+    --hero-b: #5A7A8E;
+    --hero-ink: #F3F5F2;
+    --bar: #33526A;
+    --bar-hi: #A8761F;
+    --grid: #DDE3DE;
+    --shadow: 0 1px 2px rgba(23,38,31,.06), 0 8px 24px rgba(23,38,31,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #111917; --surface: #18221F; --surface-2: #1F2B27;
+      --ink: #E6ECE7; --ink-2: #B9C4BD; --muted: #8B978F; --line: #2C3934;
+      --ridge: #8FB0C6; --ridge-deep: #B9D0DF; --ridge-soft: #2A3D4B;
+      --brass: #D3A54A; --brass-soft: #3A2F16;
+      --note-bg: #2A2413; --note-ink: #E8D3A0; --note-line: #6E5620;
+      --hero-a: #16232C; --hero-b: #2B4658; --hero-ink: #E6ECE7;
+      --bar: #8FB0C6; --bar-hi: #D3A54A; --grid: #263230;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #111917; --surface: #18221F; --surface-2: #1F2B27;
+    --ink: #E6ECE7; --ink-2: #B9C4BD; --muted: #8B978F; --line: #2C3934;
+    --ridge: #8FB0C6; --ridge-deep: #B9D0DF; --ridge-soft: #2A3D4B;
+    --brass: #D3A54A; --brass-soft: #3A2F16;
+    --note-bg: #2A2413; --note-ink: #E8D3A0; --note-line: #6E5620;
+    --hero-a: #16232C; --hero-b: #2B4658; --hero-ink: #E6ECE7;
+    --bar: #8FB0C6; --bar-hi: #D3A54A; --grid: #263230;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 18px; line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .display { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-weight: 400; text-wrap: balance; margin: 0; }
+  h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.02; letter-spacing: -0.01em; font-variation-settings: "opsz" 144; }
+  h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); line-height: 1.12; font-variation-settings: "opsz" 72; }
+  h3 { font-size: 1.35rem; line-height: 1.25; font-weight: 500; }
+  p { margin: 0; }
+  a { color: var(--ridge); text-decoration-color: color-mix(in srgb, var(--ridge) 40%, transparent); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--ridge); }
+  :focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; border-radius: 2px; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 40px); }
+  .measure { max-width: 66ch; }
+  .eyebrow { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .lede { font-size: 1.25rem; line-height: 1.5; color: var(--ink-2); }
+  .stack { display: grid; gap: 1rem; }
+
+  /* ── Header ─────────────────────────────── */
+  header.top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--ground) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 14px; }
+  .brand { font-family: "Fraunces", Georgia, serif; font-size: 1.45rem; font-weight: 500; color: var(--ink); text-decoration: none; letter-spacing: .01em; }
+  .brand small { display: block; font-family: "Source Sans 3", system-ui, sans-serif; font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-top: 1px; }
+  .nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.4rem; flex-wrap: wrap; justify-content: flex-end; }
+  .nav a.link { color: var(--ink-2); text-decoration: none; font-size: .95rem; font-weight: 500; }
+  .nav a.link:hover { color: var(--ink); }
+  .pill { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; padding: 4px 9px; border-radius: 3px; background: var(--note-bg); color: var(--note-ink); border: 1px solid var(--note-line); }
+  @media (max-width: 720px) { .nav ul { display: none; } }
+
+  /* ── Hero ───────────────────────────────── */
+  .hero { background: linear-gradient(160deg, var(--hero-a), var(--hero-b)); color: var(--hero-ink); position: relative; overflow: hidden; }
+  .hero .wrap { position: relative; padding-block: clamp(3rem, 8vw, 6.5rem) clamp(2.5rem, 6vw, 4.5rem); display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 3rem; align-items: end; }
+  .hero .eyebrow { color: color-mix(in srgb, var(--hero-ink) 70%, transparent); }
+  .hero p.lede { color: color-mix(in srgb, var(--hero-ink) 84%, transparent); max-width: 52ch; }
+  .hero svg.ridge { position: absolute; left: 0; right: 0; bottom: -2px; width: 100%; height: auto; display: block; pointer-events: none; }
+  .photo { aspect-ratio: 4 / 3; max-width: 100%; border-radius: 4px; border: 1px dashed color-mix(in srgb, var(--hero-ink) 45%, transparent); display: grid; place-items: center; text-align: center; padding: 1rem; color: color-mix(in srgb, var(--hero-ink) 75%, transparent); font-size: .9rem; background: color-mix(in srgb, var(--hero-ink) 6%, transparent); position: relative; z-index: 1; }
+  .photo.in-body { border-color: var(--line); color: var(--muted); background: var(--surface-2); }
+  .photo .cap { font-family: "Fraunces", Georgia, serif; font-style: italic; font-size: 1rem; }
+  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } .hero .photo { max-width: 420px; } }
+
+  .stats { background: var(--surface); border-bottom: 1px solid var(--line); }
+  .stats .wrap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .stat { padding-block: 1.4rem; padding-right: 1.5rem; border-left: 1px solid var(--line); padding-left: 1.25rem; }
+  .stat:first-child { border-left: 0; padding-left: 0; }
+  .stat b { display: block; font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 2.1rem; line-height: 1; color: var(--ridge-deep); font-variant-numeric: tabular-nums; }
+  .stat > span { display: block; margin-top: .45rem; color: var(--muted); font-size: .92rem; line-height: 1.3; }
+  @media (max-width: 720px) { .stats .wrap { grid-template-columns: 1fr 1fr; } .stat:nth-child(3) { border-left: 0; padding-left: 0; } }
+
+  /* ── Sections ───────────────────────────── */
+  section { padding-block: clamp(3.5rem, 7vw, 6rem); }
+  section + section { border-top: 1px solid var(--line); }
+  .sec-head { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.4fr); gap: 2rem 4rem; align-items: start; margin-bottom: 2.5rem; }
+  .sec-head .stack { gap: .6rem; }
+  @media (max-width: 860px) { .sec-head { grid-template-columns: 1fr; gap: 1rem; } }
+
+  .three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem 2rem; }
+  .three h3 { margin-bottom: .6rem; }
+  .three .eyebrow { margin-bottom: .5rem; display: block; }
+  @media (max-width: 860px) { .three { grid-template-columns: 1fr; gap: 2rem; } }
+
+  .rule { height: 2px; width: 44px; background: var(--brass); margin-bottom: 1rem; }
+
+  .invite { margin-top: 3rem; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; box-shadow: var(--shadow); display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 2rem; padding: clamp(1.4rem, 3vw, 2.4rem); }
+  .invite ul { margin: .8rem 0 0; padding-left: 1.1rem; color: var(--ink-2); }
+  .invite li + li { margin-top: .35rem; }
+  .btn { display: inline-block; background: var(--ridge); color: #fff; text-decoration: none; padding: .75rem 1.2rem; border-radius: 4px; font-weight: 600; font-size: .98rem; }
+  .btn:hover { background: var(--ridge-deep); }
+  :root[data-theme="dark"] .btn, :root:not([data-theme="light"]) .btn { color: var(--ground); }
+  @media (max-width: 860px) { .invite { grid-template-columns: 1fr; } }
+
+  .prose { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 4rem; }
+  .prose .stack { gap: 1rem; }
+  @media (max-width: 860px) { .prose { grid-template-columns: 1fr; } }
+
+  .aside { background: var(--ridge-soft); color: var(--ink); border-radius: 6px; padding: 1.3rem 1.4rem; }
+  .aside h3 { font-size: 1.15rem; margin-bottom: .4rem; }
+  .aside p { color: var(--ink-2); font-size: 1rem; }
+
+  ol.objectives { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem 3rem; counter-reset: none; }
+  ol.objectives li { padding-top: 1rem; border-top: 1px solid var(--line); color: var(--ink-2); }
+  ol.objectives li b { display: block; color: var(--ink); font-weight: 600; margin-bottom: .2rem; }
+  @media (max-width: 860px) { ol.objectives { grid-template-columns: 1fr; } }
+
+  /* ── Financial health ───────────────────── */
+  .fin { display: grid; gap: 3.5rem; }
+  .fin-block { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.4fr); gap: 1.5rem 4rem; }
+  .fin-block h3 { font-size: 1.6rem; font-weight: 400; }
+  .fin-block .eyebrow { display: block; margin-bottom: .5rem; }
+  .fin-block .more { display: inline-block; margin-top: .9rem; font-size: .95rem; font-weight: 600; }
+  @media (max-width: 860px) { .fin-block { grid-template-columns: 1fr; gap: 1rem; } }
+
+  .fee-hero { display: grid; grid-template-columns: 1fr; gap: 1.4rem; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1.5rem 1.75rem; box-shadow: var(--shadow); }
+  .fee-hero .num { font-family: "Fraunces", Georgia, serif; font-size: clamp(2.6rem, 5vw, 3.6rem); font-weight: 500; line-height: 1; color: var(--ridge-deep); font-variant-numeric: tabular-nums; }
+  .fee-hero .num small { display: block; font-family: "Source Sans 3", system-ui, sans-serif; font-size: .82rem; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; font-weight: 600; margin-top: .5rem; }
+  .fee-hero ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem 1.2rem; color: var(--ink-2); font-size: .98rem; }
+  .fee-hero ul li::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--brass); margin-right: .55rem; vertical-align: 2px; }
+  .fee-hero ul { padding-top: 1.2rem; border-top: 1px solid var(--line); }
+  @media (max-width: 520px) { .fee-hero ul { grid-template-columns: 1fr; } }
+
+  .kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; margin-top: 1.5rem; }
+  .kpi { background: var(--surface); padding: 1.1rem 1.25rem; }
+  .kpi b { display: block; font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 1.7rem; color: var(--ridge-deep); line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .kpi > span { display: block; color: var(--muted); font-size: .9rem; margin-top: .35rem; line-height: 1.35; }
+  @media (max-width: 720px) { .kpis { grid-template-columns: 1fr; } }
+
+  figure { margin: 1.5rem 0 0; }
+  figcaption { font-size: .88rem; color: var(--muted); margin-top: .6rem; }
+  .chart { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1rem 1rem .5rem; position: relative; }
+  .chart svg { display: block; width: 100%; height: auto; }
+  .chart text { font-family: "Source Sans 3", system-ui, sans-serif; fill: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .chart text.val { fill: var(--ink); font-weight: 600; }
+  .chart .bar { fill: var(--bar); }
+  .chart .bar.hi { fill: var(--bar-hi); }
+  .chart .hit { fill: transparent; cursor: default; }
+  
+  .chart .grid line { stroke: var(--grid); stroke-width: 1; }
+  .chart .base { stroke: var(--line); stroke-width: 1; }
+  .tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--ground); font-size: .85rem; padding: .35rem .6rem; border-radius: 4px; transform: translate(-50%, -110%); white-space: nowrap; opacity: 0; transition: opacity .12s; font-variant-numeric: tabular-nums; }
+  .tip.on { opacity: 1; }
+
+  .note { background: var(--note-bg); color: var(--note-ink); border: 1px solid var(--note-line); border-radius: 6px; padding: .9rem 1.1rem; font-size: .95rem; line-height: 1.45; }
+  .note b { font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: .72rem; display: block; margin-bottom: .25rem; }
+
+  /* ── Details ────────────────────────────── */
+  #details { background: var(--surface-2); }
+  .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem 3rem; }
+  @media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; } }
+  .tbl { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+  .tbl header { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1rem 1.2rem .6rem; }
+  .tbl header h3 { font-size: 1.15rem; }
+  .tbl header a { font-size: .85rem; white-space: nowrap; }
+  .tbl .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .97rem; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: .55rem 1.2rem; border-top: 1px solid var(--line); }
+  th { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  td.n, th.n { text-align: right; }
+  td.total { font-weight: 600; }
+  tfoot td { color: var(--muted); font-size: .88rem; }
+  .tbl p.foot { padding: .7rem 1.2rem 1rem; color: var(--muted); font-size: .88rem; border-top: 1px solid var(--line); }
+
+  footer.site { border-top: 1px solid var(--line); padding-block: 2.5rem 3rem; color: var(--muted); font-size: .9rem; }
+  footer.site .wrap { display: flex; flex-wrap: wrap; gap: 1rem 3rem; justify-content: space-between; }
+  .totop { font-size: .85rem; font-weight: 600; }
+</style>
+
+<style>
+  /* ── Why Kenmure ───────────────────────── */
+  #why { padding-block: clamp(3rem, 6vw, 5rem) clamp(3rem, 6vw, 4.5rem); }
+  .why-intro { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: 2.5rem 4rem; align-items: center; }
+  .why-intro h2 { max-width: 18ch; }
+  .why-intro .lede { max-width: 58ch; }
+  .why-intro .photo { aspect-ratio: 4 / 5; }
+  .why-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem 2.25rem; margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+  .why-grid > div { border-top: 2px solid var(--ridge); padding-top: 1.1rem; }
+  .why-grid h3 { margin-bottom: .55rem; }
+  .why-grid p { color: var(--ink-2); font-size: 1rem; }
+  #why + .stats { border-top: 1px solid var(--line); }
+  @media (max-width: 960px) { .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 860px) { .why-intro { grid-template-columns: 1fr; } .why-intro .photo { aspect-ratio: 16 / 9; max-width: 560px; } }
+  @media (max-width: 520px) { .why-grid { grid-template-columns: 1fr; } }
+</style>
+<style>
+  /* ── Owners bar ───────────────────────── */
+  .owners-bar { background: var(--hero-a); color: var(--hero-ink); font-size: .88rem; }
+  .owners-bar .wrap { display: flex; justify-content: flex-end; align-items: center; gap: .3rem .75rem; flex-wrap: wrap; padding-block: 7px; }
+  .owners-bar span { color: color-mix(in srgb, var(--hero-ink) 78%, transparent); }
+  .owners-bar a { color: var(--hero-ink); font-weight: 600; text-decoration-color: color-mix(in srgb, var(--hero-ink) 45%, transparent); }
+  .owners-bar a:hover { text-decoration-color: var(--hero-ink); }
+  @media (max-width: 720px) { .owners-bar .wrap { justify-content: flex-start; } }
+</style>
+</head>
+<body>
+
+
+
+
+<div class="owners-bar">
+  <div class="wrap">
+    <span>Already own in Kenmure?</span>
+    <a href="#">Go to the resident site</a>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top">Kenmure Property Owners Association <small>Flat Rock, North Carolina</small></a>
+    <ul>
+      <li><a class="link" href="#life">Life here</a></li>
+      <li><a class="link" href="#governance">Governance</a></li>
+      <li><a class="link" href="#mission">Mission</a></li>
+      <li><a class="link" href="#finances">Financial health</a></li>
+      <li><a class="link" href="#details">The numbers</a></li>
+    </ul>
+    <span style="display:flex;gap:.6rem;align-items:center">
+      
+      <span class="pill">Draft</span>
+    </span>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="stack" style="gap:1.4rem">
+        <span class="eyebrow">A gated community in the Blue Ridge</span>
+        <h1>Mountain mornings. Golf by noon. Neighbors by evening.</h1>
+        <p class="lede">Kenmure is <span>715</span> homes and <span>120</span> homesites on the Blue Ridge escarpment in Flat Rock, five miles south of Hendersonville. Golf and a private club at its center. Roads, gate, trash and snow handled by an association your neighbors run themselves, and have since <span>2002</span>.</p>
+      </div>
+      <div class="photo"><span class="cap">Photo: the entry gate at first light, or the clubhouse from the 18th green</span></div>
+    </div>
+    <svg class="ridge" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="var(--ground)" d="M0,90 L0,62 C120,54 180,30 300,36 C400,41 460,64 560,58 C660,52 720,22 840,28 C940,33 1000,60 1100,54 C1200,48 1260,26 1340,32 C1390,36 1420,48 1440,54 L1440,90 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ── WHY KENMURE ───────────────────────── -->
+  <section id="why">
+    <div class="wrap">
+      <div class="why-intro">
+        <div class="stack">
+          <span class="eyebrow">Why Kenmure</span>
+          <h2>The mountains, without giving up the town.</h2>
+          <p class="lede">Kenmure sits where the Blue Ridge begins. It feels tucked away, and it isn’t. Hendersonville’s Main Street is five miles up the road. Groceries, doctors and good restaurants are minutes from the gate, and I-26 puts Asheville and Greenville within an easy drive.</p>
+          <p class="measure" style="color:var(--ink-2)">You get quiet roads, long views and cool evenings. You keep the conveniences that make a place easy to live in for the long run. That’s the trade most mountain living asks you to make, and here you don’t have to.</p>
+        </div>
+        <div class="photo in-body"><span class="cap">Photo: fall color along a Kenmure road, or a long view from the escarpment</span></div>
+      </div>
+
+      <div class="why-grid">
+        <div>
+          <h3>Errands in minutes</h3>
+          <p>Shopping, dining and medical care in Hendersonville are a short drive away. Three commercial airports sit within 100 miles, so family visits and travel stay simple.</p>
+        </div>
+        <div>
+          <h3>One fee covers the basics</h3>
+          <p>The annual fee is <span>$1,783</span> for <span>2026</span>. It pays for the private roads, the staffed gate, trash collection and snow removal, with reserves set aside for what comes next. Club membership is your choice, billed separately.</p>
+        </div>
+        <div>
+          <h3>A place that’s lived in</h3>
+          <p>Most households live here all year. Neighbors know each other, the calendar stays full, and the community is as awake in January as it is in July.</p>
+        </div>
+        <div>
+          <h3>Seasons you can feel</h3>
+          <p>Spring blooms, summer evenings that cool off, October color on every road. In winter the Association plows all <span>22</span> miles, so getting out is never the hard part.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>715</b><span>homes, plus <span>120</span> homesites still to be built</span></div>
+      <div class="stat"><b><span>74</span>%</b><span>of residents live here year-round</span></div>
+      <div class="stat"><b><span>22</span> mi</b><span>of private roads, maintained and plowed</span></div>
+      <div class="stat"><b>2002</b><span>owner-run and all-volunteer ever since</span></div>
+    </div>
+  </div>
+
+  <!-- ── LIFE HERE ─────────────────────────── -->
+  <section id="life">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="stack">
+          <span class="eyebrow">Life here</span>
+          <h2>Mountain quiet, with a town five minutes away.</h2>
+        </div>
+        <p class="lede measure">People come to Kenmure for the same reasons they come to Flat Rock: the elevation, the seasons, and a pace that has nothing to prove. They stay because the place is easy to live in, whether that means twelve months a year or the ones that matter most to you.</p>
+      </div>
+
+      <div class="three">
+        <div>
+          <div class="rule"></div>
+          <span class="eyebrow">The setting</span>
+          <h3>Flat Rock, Henderson County</h3>
+          <p class="measure">Kenmure sits on Greenville Highway (NC 225), five miles south of downtown Hendersonville and its Main Street. Flat Rock itself is home to the Flat Rock Playhouse and the Carl Sandburg Home. Asheville's airport is 20 miles away, Greenville-Spartanburg 38, and Charlotte 97, which makes visiting family and leaving for a season both simple.</p>
+        </div>
+        <div>
+          <div class="rule"></div>
+          <span class="eyebrow">The club</span>
+          <h3>Kenmure Country Club</h3>
+          <p class="measure">At the center of the community is a privately owned club managed by Pinnacle Golf, with golf, dining, tennis, pickleball, indoor and outdoor pools, and fitness. Membership is optional, never a condition of ownership, and club dues are entirely separate from the association's annual fees. Many residents join. Some never do. Both are at home here.</p>
+        </div>
+        <div>
+          <div class="rule"></div>
+          <span class="eyebrow">The neighbors</span>
+          <h3>Full-time by a wide margin</h3>
+          <p class="measure">About three in four households live here year-round, so the community is awake in February as well as October. Kenmure Newcomers &amp; Neighbors introduces you to new and longtime residents through small activity groups that meet in each other's homes: games, dining get-togethers, book club, wine tasting and more, in three sign-up rotations a year. Any Kenmure resident or renter may join; after the first year, staying in KNN requires a Kenmure Country Club membership. For second-home owners, a staffed gate and roads plowed before you arrive mean the house is ready when you are.</p>
+        </div>
+      </div>
+
+      <div class="invite">
+        <div>
+          <h3>Come see it for yourself.</h3>
+          <p style="margin-top:.5rem;color:var(--ink-2)">Every community has a personality, and the only reliable way to judge ours is to spend time in it. Before you buy, walk the roads. Ask residents how the Board responds when something breaks. Ask what has changed in the last five years, and what is coming.</p>
+          <p style="margin-top:.8rem;color:var(--ink-2)">Your agent can arrange a showing; the rest is up to you and an afternoon.</p>
+          <p class="agents-line" style="margin-top:.8rem;color:var(--ink-2)">Don’t have an agent yet? <a href="#">Find an agent who knows Kenmure</a>.</p>
+        </div>
+        <div class="stack" style="align-content:start">
+          <div class="photo in-body" style="aspect-ratio: 3/2"><span class="cap">Photo: a KNN gathering, or neighbors on a walk</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GOVERNANCE ────────────────────────── -->
+  <section id="governance">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="stack">
+          <span class="eyebrow">Governance</span>
+          <h2>No management company. Your neighbors, elected.</h2>
+        </div>
+        <p class="lede measure">Buying into a community association means going into business with the people next door. Here is who they are and how the business is run.</p>
+      </div>
+      <div class="prose">
+        <div class="stack">
+          <p>The Kenmure Property Owners Association (KPOA) was formed in <span>2002</span> under North Carolina's Planned Community Act (Chapter 47F). Every property owner becomes a member at closing, and membership ends only when you sell all real estate you own in Kenmure. The governing documents are the Declaration, the Bylaws and the Articles of Incorporation.</p>
+          <p>A seven-member Board of Directors runs the Association. Owners elect directors to three-year terms, two or three seats each year, and the Board chooses its own President and Vice President. Volunteer committees handle community standards compliance, road maintenance, security, emergency preparedness and other functions. KPOA is the largest homeowners association in North Carolina run entirely by volunteers.</p>
+          <p>What that means in practice: no management company taking a percentage, and no layer of paid staff between owners and the people making decisions. The tradeoff is honest too. The Association depends on residents willing to serve, and it has found them for more than two decades.</p>
+        </div>
+        <div class="stack">
+          <div class="aside">
+            <h3>If you're buying a condominium or cottage</h3>
+            <p><span>Eleven</span> condominium and cottage associations operate within Kenmure. Each has its own governing documents, board, budget and reserves. They must comply with KPOA's documents, but their finances are separate, and this page describes only KPOA's.</p>
+            <p style="margin-top:.6rem">Lenders now look harder at condominium association finances than at community associations like KPOA, and a condominium association's reserve levels can affect a mortgage.</p>
+          </div>
+          <div class="photo in-body" style="aspect-ratio: 16/9"><span class="cap">Photo: a Board or committee meeting in session</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MISSION ───────────────────────────── -->
+  <section id="mission">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="stack">
+          <span class="eyebrow">Mission</span>
+          <h2>Keep Kenmure a premier place to live.</h2>
+        </div>
+        <p class="lede measure">Enhance the Kenmure residential community under the leadership of an elected Board of Directors. The Association is organized to fund and provide essential services, and is guided by respect among members, high regard for its volunteers, and interest in the ongoing development of Kenmure as a premier place to live.</p>
+      </div>
+      <span class="eyebrow" style="display:block;margin-bottom:1rem">Objectives</span>
+      <ol class="objectives">
+        <li><b>Provide essential services</b>Road maintenance, gated security, trash removal, snow removal, and others as appropriate.</li>
+        <li><b>Protect property values</b>Architectural review, beautification, and the standards that keep the community looking like itself.</li>
+        <li><b>Manage the common elements</b>The roads, the entry gates, and Rail Pen Gap Park.</li>
+        <li><b>Support community organizations</b>An umbrella for the Welcoming Committee, Emergency Management, Kenmure Newcomers &amp; Neighbors and others.</li>
+        <li><b>Fund the future before it arrives</b>Reserves sized so that predictable repaving and unpredictable storms are paid for without special assessments.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── FINANCIAL HEALTH ──────────────────── -->
+  <section id="finances">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="stack">
+          <span class="eyebrow">Financial health</span>
+          <h2>The questions a careful buyer asks. Answered first.</h2>
+        </div>
+        <p class="lede measure">Once you own here, you share responsibility for what the community owns and for decisions made before you arrived. We would rather you ask the hard questions now than be surprised later. Every figure on this page comes from KPOA's <span>2025</span> reserve study, its <span>February 2026</span> financial statement and <span>21</span> years of historical financials, and the full tables are <a href="#details">at the bottom of the page</a>.</p>
+      </div>
+
+      <div class="fin">
+
+        <!-- Annual fees -->
+        <div class="fin-block">
+          <div>
+            <span class="eyebrow">Annual fees</span>
+            <h3>One fee. Everyone pays the same.</h3>
+            <p style="margin-top:.8rem;color:var(--ink-2)">Every home, condominium and cottage pays one flat annual fee, set each fall by the Board. Lot owners pay less. There are no tiers and no add-ons for services<span>, and the fee did not increase for 2026</span>. The governing documents call this an assessment; we call it what it is.</p>
+            <a class="more" href="#t-fees">Fee history ↓</a>
+          </div>
+          <div>
+            <div class="fee-hero">
+              <div class="num"><span>$1,783</span><small>per year · homes, condos, cottages · <span>2026</span></small></div>
+              <ul>
+                <li>Road maintenance and repaving</li>
+                <li>Staffed gate and contract security</li>
+                <li>Trash collection</li>
+                <li>Snow removal</li>
+                <li>Right-of-way, mowing and leaf removal</li>
+                <li>Culvert repair and storm response</li>
+                <li>Tree work along the roads</li>
+                <li>Reserve contributions</li>
+              </ul>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><b>4.7%</b><span>average annual increase over <span>ten</span> years, against an 8% or CPI ceiling</span></div>
+              <div class="kpi"><b>One</b><span>special assessment in 21 years: $125 per property, June 2010</span></div>
+              <div class="kpi"><b>$1,337</b><span>annual fee for an undeveloped lot</span></div>
+            </div>
+            <figure>
+              <div class="chart" id="feeChart" aria-label="Annual fee by year"><svg viewBox="0 0 640 240" role="img" aria-label="Bar chart of annual fee per home from 2016 to 2026"><g class="grid"><line x1="44" x2="628" y1="210" y2="210"></line><text x="36" y="214" text-anchor="end">0</text><line x1="44" x2="628" y1="163" y2="163"></line><text x="36" y="167" text-anchor="end">$0.5k</text><line x1="44" x2="628" y1="116" y2="116"></line><text x="36" y="120" text-anchor="end">$1k</text><line x1="44" x2="628" y1="69" y2="69"></line><text x="36" y="73" text-anchor="end">$1.5k</text><line x1="44" x2="628" y1="22" y2="22"></line><text x="36" y="26" text-anchor="end">$2k</text></g><line class="base" x1="44" x2="628" y1="210" y2="210"></line><rect class="hit" x="44" y="22" width="53.09090909090909" height="188" data-i="0"></rect><path class="bar" d="M55.14909090909091,108.25 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v101.75 h-30.792727272727273 z" data-i="0"></path><text class="val" x="70.54545454545455" y="97.25" text-anchor="middle">$1,125</text><text x="70.54545454545455" y="231" text-anchor="middle">2016</text><rect class="hit" x="97.0909090909091" y="22" width="53.09090909090909" height="188" data-i="1"></rect><path class="bar" d="M108.24000000000001,108.25 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v101.75 h-30.792727272727273 z" data-i="1"></path><text x="123.63636363636364" y="231" text-anchor="middle">2017</text><rect class="hit" x="150.1818181818182" y="22" width="53.09090909090909" height="188" data-i="2"></rect><path class="bar" d="M161.3309090909091,105.9 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v104.1 h-30.792727272727273 z" data-i="2"></path><text x="176.72727272727275" y="231" text-anchor="middle">2018</text><rect class="hit" x="203.27272727272728" y="22" width="53.09090909090909" height="188" data-i="3"></rect><path class="bar" d="M214.42181818181817,97.44 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v112.56 h-30.792727272727273 z" data-i="3"></path><text x="229.8181818181818" y="231" text-anchor="middle">2019</text><rect class="hit" x="256.3636363636364" y="22" width="53.09090909090909" height="188" data-i="4"></rect><path class="bar" d="M267.5127272727273,88.51 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v121.49 h-30.792727272727273 z" data-i="4"></path><text x="282.90909090909093" y="231" text-anchor="middle">2020</text><rect class="hit" x="309.4545454545455" y="22" width="53.09090909090909" height="188" data-i="5"></rect><path class="bar" d="M320.60363636363644,84.75 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v125.25 h-30.792727272727273 z" data-i="5"></path><text x="336.00000000000006" y="231" text-anchor="middle">2021</text><rect class="hit" x="362.54545454545456" y="22" width="53.09090909090909" height="188" data-i="6"></rect><path class="bar" d="M373.6945454545455,74.41 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v135.59 h-30.792727272727273 z" data-i="6"></path><text x="389.0909090909091" y="231" text-anchor="middle">2022</text><rect class="hit" x="415.6363636363636" y="22" width="53.09090909090909" height="188" data-i="7"></rect><path class="bar" d="M426.78545454545457,63.31800000000001 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v146.682 h-30.792727272727273 z" data-i="7"></path><text x="442.1818181818182" y="231" text-anchor="middle">2023</text><rect class="hit" x="468.72727272727275" y="22" width="53.09090909090909" height="188" data-i="8"></rect><path class="bar" d="M479.8763636363637,58.80600000000001 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v151.194 h-30.792727272727273 z" data-i="8"></path><text x="495.2727272727273" y="231" text-anchor="middle">2024</text><rect class="hit" x="521.8181818181819" y="22" width="53.09090909090909" height="188" data-i="9"></rect><path class="bar" d="M532.9672727272728,46.397999999999996 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v163.602 h-30.792727272727273 z" data-i="9"></path><text x="548.3636363636364" y="231" text-anchor="middle">2025</text><rect class="hit" x="574.909090909091" y="22" width="53.09090909090909" height="188" data-i="10"></rect><path class="bar hi" d="M586.0581818181819,46.397999999999996 a4,4 0 0 1 4,-4 h22.792727272727273 a4,4 0 0 1 4,4 v163.602 h-30.792727272727273 z" data-i="10"></path><text class="val" x="601.4545454545455" y="35.397999999999996" text-anchor="middle">$1,783</text><text x="601.4545454545455" y="231" text-anchor="middle">2026</text></svg></div>
+              <figcaption>Annual fee per home, <span>2016</span> to <span>2026</span>.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Reserves -->
+        <div class="fin-block">
+          <div>
+            <span class="eyebrow">Reserves</span>
+            <h3>Paid for before it breaks.</h3>
+            <p style="margin-top:.8rem;color:var(--ink-2)">KPOA keeps separate reserves for road maintenance, storm-related expenses, and general and administrative costs. Storm reserves are sized on what storms have actually cost. Administrative reserves are sized on past spending and on planned community improvement initiatives.</p>
+            <a class="more" href="#t-reserves">Reserve funding and spending detail ↓</a>
+          </div>
+          <div class="stack" style="gap:1.25rem">
+            <div class="kpis" style="margin-top:0">
+              <div class="kpi"><b>24¢</b><span>of every fee dollar goes to reserves in the <span>2025</span> budget (<span>$370,224</span>)</span></div>
+              <div class="kpi"><b>$3.1M</b><span>in reserves and fund balance at <span>February 28, 2026</span>, up from <span>$2.9M</span> a year earlier (unaudited)</span></div>
+              <div class="kpi"><b>Every 4 yrs</b><span>an independent engineering study of the roads, required by the bylaws. The <span>2026</span> study <span>found road reserves and the projection method appropriate</span>.</span></div>
+            </div>
+            <p class="measure">Storm response is the line that has moved most. Over <span>21</span> years Kenmure spent an average of <span>$67,451</span> a year on storms and roadside tree work. Over the last five years that average is <span>$127,151</span>. The Association keeps a dedicated storm reserve, sized on that history, for exactly this reason.</p>
+          </div>
+        </div>
+
+        <!-- Planned work -->
+        <div class="fin-block">
+          <div>
+            <span class="eyebrow">Planned work</span>
+            <h3>Budgeted before it starts.</h3>
+            <p style="margin-top:.8rem;color:var(--ink-2)">Major work in Kenmure is planned through the same fall budget cycle that sets the annual fee, not through surprise assessments.</p>
+          </div>
+          <div class="stack">
+            <p class="measure">Road work follows the four-year engineering study, which tells the Board what the roads need and what it will cost to keep them in condition. Storm reserves are sized on the storms Kenmure has actually weathered. Community improvement initiatives the Board intends to pursue are funded through the administrative reserve, so the money is set aside before the work begins. Ask the Treasurer what is currently planned; the answer changes year to year, and the process does not.</p>
+          </div>
+        </div>
+
+        <!-- Insurance -->
+        <div class="fin-block">
+          <div>
+            <span class="eyebrow">Insurance</span>
+            <h3>Steady, when the trend elsewhere is not.</h3>
+            <p style="margin-top:.8rem;color:var(--ink-2)">Association insurance costs have risen sharply across the country in recent years. KPOA's insurance premium has increased from <span>$5,136</span> in <span>2004</span> to <span>$14,587</span> in <span>2024</span>, about <span>5</span>% a year.</p>
+            <a class="more" href="#t-insurance">Insurance cost history ↓</a>
+          </div>
+          <div class="stack">
+          </div>
+        </div>
+
+        <!-- Documents -->
+        <div class="fin-block">
+          <div>
+            <span class="eyebrow">Documents and due diligence</span>
+            <h3>Ask for anything. We'd rather you did.</h3>
+            <p style="margin-top:.8rem;color:var(--ink-2)">The documents that govern Kenmure are public. The ones that describe its finances are a request away.</p>
+          </div>
+          <div class="stack">
+            <p class="measure">The Declaration, Bylaws and Articles of Incorporation are posted on the KPOA website. The current annual budget, the most recent financial statement, the reserve study and recent Board minutes are available on request from the Treasurer at <a href="mailto:treasurer@kenmure.org">treasurer@kenmure.org</a>.</p>
+            <div class="note"><b>Draft note</b>Open question for Brian: which of the budget, reserve study and Board minutes does KPOA currently provide to prospective buyers on request? Adjust the sentence above to match, and add the link to the governing-documents page.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── THE NUMBERS ───────────────────────── -->
+  <section id="details">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="stack">
+          <span class="eyebrow">The numbers</span>
+          <h2>Everything above, in full.</h2>
+        </div>
+        <p class="lede measure">Source: KPOA <span>2025</span> Reserve Study, historical financials <span>2004</span> through the <span>2025</span> budget, KPOA's <span>February 28, 2026</span> financial statement (unaudited), and KPOA's <span>2026</span> community summary. Figures are the Association's own. This page is informational and is not an appraisal or a substitute for the governing documents.</p>
+      </div>
+
+      <div class="grid-2">
+
+        <div class="tbl" id="t-fees">
+          <header><h3>Annual fee per home</h3><a href="#finances" class="totop">↑ Back to annual fees</a></header>
+          <div class="scroll"><table>
+            <thead><tr><th>Year</th><th class="n">Fee</th><th class="n">Change</th></tr></thead>
+            <tbody><tr><td>2016</td><td class="n">$1,125</td><td class="n">—</td></tr><tr><td>2017</td><td class="n">$1,125</td><td class="n">0.0%</td></tr><tr><td>2018</td><td class="n">$1,150</td><td class="n">2.2%</td></tr><tr><td>2019</td><td class="n">$1,240</td><td class="n">7.8%</td></tr><tr><td>2020</td><td class="n">$1,335</td><td class="n">7.7%</td></tr><tr><td>2021</td><td class="n">$1,375</td><td class="n">3.0%</td></tr><tr><td>2022</td><td class="n">$1,485</td><td class="n">8.0%</td></tr><tr><td>2023</td><td class="n">$1,603</td><td class="n">7.9%</td></tr><tr><td>2024</td><td class="n">$1,651</td><td class="n">3.0%</td></tr><tr><td>2025</td><td class="n">$1,783</td><td class="n">8.0%</td></tr><tr><td>2026</td><td class="n">$1,783</td><td class="n">0.0%</td></tr></tbody>
+            <tfoot><tr><td><span>2016</span> to <span>2026</span></td><td class="n">+58.5%</td><td class="n"><span>4.7%</span> / yr</td></tr></tfoot>
+          </table></div>
+          <p class="foot">Undeveloped lots: <span>$1,337</span> for <span>2026</span>. Governing documents allow an annual increase of <span>8.0% or the most recent CPI, whichever is greater</span>, without an owner vote. Special assessments since <span>2004</span>: <span>one, June 2010, $125 per property</span>.</p>
+        </div>
+
+        <div class="tbl" id="t-community">
+          <header><h3>The community</h3><a href="#top" class="totop">↑ Top</a></header>
+          <div class="scroll"><table>
+            <thead><tr><th>Property type</th><th class="n">Count</th></tr></thead>
+            <tbody>
+              <tr><td>Homes (single-family, condominium and cottage)</td><td class="n">715</td></tr>
+              <tr><td>Vacant lots</td><td class="n">120</td></tr>
+              <tr><td class="total">Total</td><td class="n total">835</td></tr>
+            </tbody>
+          </table></div>
+          <p class="foot">Counts are approximate, per KPOA, <span>2026</span>. Roads: <span>22</span> miles. Full-time residents: about <span>74</span>%. Condominium and cottage associations within Kenmure: <span>11</span>. Paid KPOA staff: none.</p>
+        </div>
+
+        <div class="tbl" id="t-reserves">
+          <header><h3>Reserve funding, <span>2025</span> budget</h3><a href="#finances" class="totop">↑ Back to reserves</a></header>
+          <div class="scroll"><table>
+            <thead><tr><th>Reserve</th><th class="n"><span>2025</span> contribution</th></tr></thead>
+            <tbody>
+              <tr><td>Road maintenance: repaving</td><td class="n">$225,000</td></tr>
+              <tr><td>Road maintenance: general</td><td class="n">$77,101</td></tr>
+              <tr><td>Storm</td><td class="n">$68,123</td></tr>
+              <tr><td class="total">Total to reserves</td><td class="n total">$370,224</td></tr>
+              <tr><td>Share of <span>2025</span> budgeted income (<span>$1,548,722</span>)</td><td class="n">23.9%</td></tr>
+            </tbody>
+          </table></div>
+          <p class="foot">Repaving reserve funded every year <span>2007</span> through <span>2025</span>; about <span>$3.0 million</span> contributed in total. The bylaws require an independent engineering study of the roads every four years; the most recent, completed in <span>2026</span>, <span>found road reserves and the projection method appropriate</span>.</p>
+        </div>
+
+        <div class="tbl" id="t-position">
+          <header><h3>Financial position</h3><a href="#finances" class="totop">↑ Back to reserves</a></header>
+          <div class="scroll"><table>
+            <thead><tr><th><span>February 28</span> (in thousands)</th><th class="n">2026</th><th class="n">2025</th></tr></thead>
+            <tbody><tr><td class="">Total current assets</td><td class="n">$3,105</td><td class="n">$2,777</td></tr><tr><td class="">Total assets</td><td class="n">$3,383</td><td class="n">$3,056</td></tr><tr><td class="">Total liabilities and deferred revenue</td><td class="n">$269</td><td class="n">$190</td></tr><tr><td class="total">Total reserves and fund balance</td><td class="n total">$3,114</td><td class="n total">$2,866</td></tr></tbody>
+          </table></div>
+          <p class="foot">Excerpted from KPOA's financial statement, unaudited.</p>
+        </div>
+
+        <div class="tbl" id="t-spend">
+          <header><h3>What the roads actually cost</h3><a href="#finances" class="totop">↑ Back to reserves</a></header>
+          <div class="scroll"><table>
+            <thead><tr><th>Category</th><th class="n">5-yr avg</th><th class="n"><span>21</span>-yr avg</th></tr></thead>
+            <tbody><tr><td>Road maintenance, all lines</td><td class="n">$275,722</td><td class="n">—</td></tr><tr><td>Storm response and tree work</td><td class="n">$127,151</td><td class="n">$67,451</td></tr><tr><td>Culvert repairs</td><td class="n">$102,645</td><td class="n">—</td></tr><tr><td>Asphalt patching, striping, signage</td><td class="n">$36,537</td><td class="n">$24,460</td></tr></tbody>
+          </table></div>
+          <p class="foot">Annual averages from the <span>2025</span> reserve study and the years added since. Five-year averages use the five most recent years with data; road maintenance totals include the current budget year. Peak storm year on record: <span>2024</span>, <span>$231,343</span> in combined storm and tree expense.</p>
+        </div>
+
+        <div class="tbl" id="t-insurance">
+          <header><h3>Association insurance cost</h3><a href="#finances" class="totop">↑ Back to insurance</a></header>
+          <div class="scroll"><table>
+            <thead><tr><th>Year</th><th class="n">Premium</th></tr></thead>
+            <tbody><tr><td>2004</td><td class="n">$5,136</td></tr><tr><td>2009</td><td class="n">$7,535</td></tr><tr><td>2014</td><td class="n">$10,520</td></tr><tr><td>2019</td><td class="n">$12,884</td></tr><tr><td>2024</td><td class="n">$14,587</td></tr><tr><td>2025 budget</td><td class="n">$15,025</td></tr></tbody>
+            <tfoot><tr><td><span>2004</span> to <span>2024</span></td><td class="n"><span>+184%</span>, about <span>5.4%</span> / yr</td></tr></tfoot>
+          </table></div>
+          <p class="foot">Premiums from KPOA's historical financials.</p>
+        </div>
+
+        <div class="tbl" id="t-docs">
+          <header><h3>Documents available on request</h3><a href="#finances" class="totop">↑ Back to due diligence</a></header>
+          <div class="scroll"><table>
+            <thead><tr><th>Document</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Declaration, Bylaws, Articles of Incorporation</td><td>KPOA website</td></tr>
+              <tr><td>Current annual budget</td><td>On request</td></tr>
+              <tr><td>Most recent financial statement</td><td>On request</td></tr>
+              <tr><td>Reserve study</td><td>On request</td></tr>
+              <tr><td>Recent Board minutes</td><td>On request</td></tr>
+            </tbody>
+          </table></div>
+          <p class="foot">Requests go to the KPOA Treasurer, <a href="mailto:treasurer@kenmure.org">treasurer@kenmure.org</a>.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>Kenmure Property Owners Association · Flat Rock, Henderson County, North Carolina · <a href="mailto:treasurer@kenmure.org">treasurer@kenmure.org</a></div>
+    <div>Community figures per KPOA, <span>2026</span>. Financial figures from the KPOA <span>2025</span> Reserve Study and the <span>February 28, 2026</span> financial statement (unaudited). <a href="#top" class="totop">↑ Top</a></div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+</body></html>
